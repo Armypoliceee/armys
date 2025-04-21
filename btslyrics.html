@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BTS Lyrics Center</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6ff;
+      color: #4a4a4a;
+      padding: 20px;
+    }
+    h1 {
+      color: #b300b3;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .song-title {
+      background-color: #e6ccff;
+      border: none;
+      padding: 10px 15px;
+      margin: 10px 0;
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .song-title:hover {
+      background-color: #d1b3ff;
+    }
+    .lyrics {
+      display: none;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #f9f0ff;
+      border-left: 5px solid #b300b3;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>BTS Lyrics Center 🎶</h1>
+
+  <!-- Each Song -->
+  <button class="song-title" onclick="toggleLyrics('lyrics1')">Permission to Dance</button>
+  <div class="lyrics" id="lyrics1">
+We don't need to worry  
+'Cause when we fall, we know how to land  
+  
+There's always something that's standing in the way  
+But if you don't let it faze ya  
+You'll know just how to break  
+Just keep the right vibe, yeah  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics2')">Life Goes On</button>
+  <div class="lyrics" id="lyrics2">
+Like an echo in the forest  
+The day will come back around  
+As if nothing happened  
+Yeah, life goes on  
+Like an arrow in the blue sky  
+Another day flying by  
+On my pillow, on my table  
+Yeah, life goes on  
+Like this again  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics3')">ON</button>
+  <div class="lyrics" id="lyrics3">
+Can't hold me down 'cuz you know I'm a fighter  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics4')">NO</button>
+  <div class="lyrics" id="lyrics4">
+Don’t be trapped in someone else’s dream  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics5')">No More Dream</button>
+  <div class="lyrics" id="lyrics5">
+Go your own way  
+Even if you live a day  
+Do something  
+Put weakness away  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics6')">Dream Glow</button>
+  <div class="lyrics" id="lyrics6">
+In the dark dawn, spreading trembling wings  
+Keep on shining make it brighter than a spotlight  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics7')">Not Today</button>
+  <div class="lyrics" id="lyrics7">
+If you can’t fly, then run  
+Today we will survive  
+If you can’t run, then walk  
+Today we will survive  
+If you can’t walk, then crawl  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics8')">Answer: Love Myself</button>
+  <div class="lyrics" id="lyrics8">
+Even all the scars from your mistakes make up your constellation  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics9')">So What</button>
+  <div class="lyrics" id="lyrics9">
+90% of your worries are just an imaginary swamp that you created  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics10')">Dynamite</button>
+  <div class="lyrics" id="lyrics10">
+I’m diamond, you know I glow up  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics11')">We are Bulletproof Pt. 2</button>
+  <div class="lyrics" id="lyrics11">
+Everywhere I go, everything I do  
+I will show you, as much as I sharpened my sword  
+To all the people who looked down on me  
+Hey shout it out  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics12')">Love Maze</button>
+  <div class="lyrics" id="lyrics12">
+We must believe only in ourselves  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics13')">Lost</button>
+  <div class="lyrics" id="lyrics13">
+To lose your path  
+Is the way to find that path  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics14')">Cypher Pt. 3: Killer</button>
+  <div class="lyrics" id="lyrics14">
+If you try to damage me with simple words like that  
+I only become stronger  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics15')">Lights</button>
+  <div class="lyrics" id="lyrics15">
+Decide for yourself what it means to be happy  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics16')">We are Bulletproof: The Eternal</button>
+  <div class="lyrics" id="lyrics16">
+Even if winter comes again  
+Even if I’m blocked off, I will still walk  
+We are we are forever bulletproof  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics17')">Dis-ease</button>
+  <div class="lyrics" id="lyrics17">
+Throw away the fear  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics18')">Mikrokosmos</button>
+  <div class="lyrics" id="lyrics18">
+In the dark night, don't be lonely  
+Like the stars, we shine  
+Don't disappear, because you're a great existence  
+Let us shine  
+  </div>
+
+  <button class="song-title" onclick="toggleLyrics('lyrics19')">21st Century Girls</button>
+  <div class="lyrics" id="lyrics19">
+Don’t ever be scared  
+Whatever people say, you’re okay  
+  </div>
+
+  <script>
+    function toggleLyrics(id) {
+      var lyricsDiv = document.getElementById(id);
+      lyricsDiv.style.display = (lyricsDiv.style.display === "none" || lyricsDiv.style.display === "") ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
